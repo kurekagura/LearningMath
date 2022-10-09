@@ -51,35 +51,35 @@ e.g.)正規分布、一様分布
 $E[X]=\sum_i{x_if(x_i)}$
 
 連続型  
-$E[X]=\int^{\infin}_{-\infin}{xf(x)dx}$
+$E[X]=\int^{\infty}_{-\infty}{xf(x)dx}$
 
 # 平均値と期待値の関係
 平均値は次の式で求められる。
 
-$\overline{x}=\sum_{i}\frac{x_iN_i}{N}$
+$\displaystyle\overline{x}=\sum_{i}\frac{x_iN_i}{N}$
 
 ※${N_i}$は${x_i}$が発生した回数。$\frac{N_i}{N}$を**相対度数**という。
 
-標本数 $N$ が $\infin$ では、$相対度数\space\frac{N_i}{N}=p_i$ となり、$\bold{平均\space\overline{x}=期待値\space\mu}$ となる。  
+標本数 $N$ が $\infty$ では、$相対度数\space\frac{N_i}{N}=p_i$ となり、$\bold{平均\space\overline{x}=期待値\space\mu}$ となる。  
 
-$\mu=\sum_{i}x_ip_i$
+$\displaystyle\mu=\sum_{i}x_ip_i$
 
 <u>**M**</u>EAN（平均）の頭文字Mのギリシャ文字が $\mu$ (mu) であり、期待値は $\mu$ で表記される。
 
 # 確率変数の分散の公式
 通常の分散
 
-$\sigma^2=\frac1n\sum^n_{i=1}(x_i-\overline{x})^2$
+$\displaystyle\sigma^2=\frac1n\sum^n_{i=1}(x_i-\overline{x})^2$
 
 標本数$N$、${x_i}$が発生する度数を$N_i$ とする確率で理解すると、
 
-$\sum^n_{i=1}(x_i-\overline{x})^2\frac{N_i}{N}$
+$\displaystyle\sum^n_{i=1}(x_i-\overline{x})^2\frac{N_i}{N}$
 
-$N$ が $\infin$ では、相対度数 $\frac{N_i}{N}=p_i$（確率）となり、平均値と期待値は等しくなる（$\overline{x}=\mu$）。
+$N$ が $\infty$ では、相対度数 $\frac{N_i}{N}=p_i$（確率）となり、平均値と期待値は等しくなる（$\overline{x}=\mu$）。
 
 確率変数の分散を次のように定義している。
 
-$\sigma^2=V[X]=\sum^n_{i=1}(x_i-\mu)^2p_i$
+$\displaystyle\sigma^2=V[X]=\sum^n_{i=1}(x_i-\mu)^2p_i$
 
 # ベルヌーイ分布
 ベルヌーイ試行を１回行う場合に確率変数$X$が従う分布をベルヌーイ分布（$Be(p)$）という。$X\backsim Be(p)$と表記する。
