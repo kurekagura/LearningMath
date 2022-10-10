@@ -4,3 +4,7 @@ $\boldsymbol{太字}$
 
 $a\plusmn b$  
 $a\pm b$
+
+<u>アンダーライン</u>  
+<ins>アンダーライン</ins>
+
