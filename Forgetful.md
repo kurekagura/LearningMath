@@ -58,9 +58,9 @@ $E[X]=\int^{\infty}_{-\infty}{xf(x)dx}$
 
 $\displaystyle\overline{x}=\sum_{i}\frac{x_iN_i}{N}$
 
-※${N_i}$は${x_i}$が発生した回数。$\frac{N_i}{N}$を**相対度数**という。
+※ ${N_i}$ は ${x_i}$ が発生した回数。 $\frac{N_i}{N}$ を**相対度数**という。
 
-標本数 $N$ が $\infty$ では、$相対度数\space\frac{N_i}{N}=p_i$ となり、$\bold{平均\space\overline{x}=期待値\space\mu}$ となる。  
+標本数 $N$ が $\infty$ では、 $相対度数\space\frac{N_i}{N}=p_i$ となり、 $\boldsymbol{平均\space\overline{x}=期待値\space\mu}$ となる。  
 
 $\displaystyle\mu=\sum_{i}x_ip_i$
 
@@ -71,17 +71,27 @@ $\displaystyle\mu=\sum_{i}x_ip_i$
 
 $\displaystyle\sigma^2=\frac1n\sum^n_{i=1}(x_i-\overline{x})^2$
 
-標本数$N$、${x_i}$が発生する度数を$N_i$ とする確率で理解すると、
+標本数 $N$ 、 ${x_i}$ が発生する度数を $N_i$ とする確率で理解すると、
 
 $\displaystyle\sum^n_{i=1}(x_i-\overline{x})^2\frac{N_i}{N}$
 
-$N$ が $\infty$ では、相対度数 $\frac{N_i}{N}=p_i$（確率）となり、平均値と期待値は等しくなる（$\overline{x}=\mu$）。
+$N$ が $\infty$ では、相対度数 $\frac{N_i}{N}=p_i$（確率）となり、平均値と期待値は等しくなる（ $\overline{x}=\mu$ ）。
 
 確率変数の分散を次のように定義している。
 
 $\displaystyle\sigma^2=V[X]=\sum^n_{i=1}(x_i-\mu)^2p_i$
 
 # ベルヌーイ分布
-ベルヌーイ試行を１回行う場合に確率変数$X$が従う分布をベルヌーイ分布（$Be(p)$）という。$X\backsim Be(p)$と表記する。
+ベルヌーイ試行を１回行う場合に確率変数$X$が従う分布をベルヌーイ分布（ $Be(p)$ ）という。 $X\backsim Be(p)$ と表記する。
 
-確率変数 $X$ は$失敗=0$ 又は、$成功=1$ の何れかとなる。
+$確率変数Xは失敗=0又は成功=1の何れかをとる。$
+
+分布表
+
+|X|0|1|
+|:---:|:---:|:---:|
+|P|1-p|p|
+
+| X^2 |0^2|1^2|
+|:---:|:---:|:---:|
+|P|1-p|p|
