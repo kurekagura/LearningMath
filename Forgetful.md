@@ -52,6 +52,21 @@ $(cosx)' = -sinx$
 
 $(tanx)' = -\frac{1}{cos^2x}$
 
+# 平方根 $\sqrt{x}$ の微分
+
+$y=\sqrt{x}=x^{1/2}$
+
+$y'=\frac{1}{2}x^{-1/2}=\frac{1}{2\sqrt{x}}$
+
+# 指数関数 $a^x$ の微分
+
+$y=a^x\quad(a>0,\space a\ne1)$
+
+$(a^x)'=a^x\log_{e}a$
+
+$(e^x)'=e^x$
+
+$(e^{nx})'=(e^{nx})\times{n}=ne^{nx}$　・・・合成関数の微分
 
 # 偏差値
 **※「標準偏差値」という用語は無い。**
