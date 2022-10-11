@@ -1,6 +1,14 @@
 # 誤差逆伝播
 
-活性化関数 : ※ l : 層、L : 最終層
+$u$ は重み付け線形和の関数を表す。
+
+$u^l_{ij}=u^l_{ij}(z^{l-1}_0,z^{l-1}_1,...,z^{l-1}_n)$
+
+$(l-1)$ 層目の $n$ 個のニューロンから次の $l$ 層目の1番目のニューロン $\boxed{u|z}^l_1$ へ入力される際の例
+
+$u^l_1=w^l_{11}z^{l-1}_1+w^l_{21}z^{l-1}_2+w^l_{31}z^{l-1}_3+...+w^l_{n1}z^{l-1}_n+b$
+
+活性化関数 :
 
 $z=\varphi^l(u)$
 
@@ -44,3 +52,15 @@ $\delta^L_j=y_j-\hat{y}_j$
 **右辺は順伝播で得られる値であるので、最終層の勾配の値が求まる。**
 
 $\displaystyle\frac{\partial E}{\partial w^L_{ij}} =(y_j-\hat{y}_j)\times z^{L-1}_i$
+
+～　重みの更新（合ってる？）　～
+
+$ w_{new} = w_{old} - lr\times{(y_j-\hat{y}_j)z^{L-1}_i}$
+
+～　中間層を考える　～
+
+$\displaystyle\frac{\partial E}{\partial w^l_{ij}} = \frac{\partial E}{\partial u^l_j} \frac{\partial u^l_j}{\partial w^l_{ij}} = \delta^{l}_{j} z^{l-1}_i$
+
+※ $z^{l-1}_i$ は順伝播で値が得られる。
+
+$\displaystyle\delta^{l}_{j}=\frac{\partial E}{\partial u^l_j}=$
