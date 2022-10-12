@@ -1,5 +1,54 @@
 ※上へ追記していく
 
+# 連鎖律
+
+２段の合成関数
+
+$f=f(u),u=u(x)\to f(u(x))$
+
+$f$ は $u$ から定まり、$u$ は $x$ から定まる。この時、
+
+$\displaystyle \frac{df}{dx}=\frac{df}{du}\frac{du}{dx}$
+
+<ins>３段以上の場合も同様</ins>
+
+$f=f(u),u=u(v),v=v(u)\to f(u(v(x)))$
+
+$f$ は $u$ から定まり、$u$ は $v$ から定まり、 $v$ は $x$ から定まる。。この時、
+
+$\displaystyle \frac{df}{dx}=\frac{df}{du}\frac{du}{dx}$
+$\displaystyle=\frac{df}{dv}\frac{dv}{dx}$
+$\displaystyle=\frac{df}{du}\frac{du}{dv}\frac{dv}{dx}$
+
+（例）
+
+$f=2u,u=3v,v=4x\to f=2(3v)\to 2(3(4x))=24x$
+
+$\displaystyle \frac{df}{du}\frac{du}{dx}=\frac{df}{du}(\frac{du}{dv}\frac{dv}{dx})$
+$=2\times{(3\times{4})}=24$
+
+$\displaystyle \frac{df}{dv}\frac{dv}{dx}=(\frac{df}{du}\frac{du}{dv})\frac{dv}{dx}$
+$=(2\times{3})\times{4}=24$
+
+<ins>NNの最終層の勾配計算に引き寄せて考えてみる</ins>
+
+$u$ : 重み付け線形和 $\varphi$ : 活性化関数 $E$ : 誤差関数
+
+$E(\varphi(u(w)))$ の $w$ による微分：
+
+$\displaystyle\frac{dE}{dw}=\frac{dE}{d\varphi}\frac{d\varphi}{du}\frac{du}{dw}$
+
+## 多変数関数の連鎖律
+
+$f(u,v),u=u(x,y),v=v(x,y)$
+$\to f(u(x,y),v(x,y))$
+
+$\displaystyle \frac{\partial f}{\partial x}=\frac{ \partial f}{\partial u}\frac{\partial u}{\partial x}+\frac{ \partial f}{\partial v}\frac{\partial v}{\partial x}$
+
+一般化：
+
+$\displaystyle \frac{\partial f}{\partial x}=\sum_k\frac{ \partial f}{\partial u_k}\frac{\partial u_k}{\partial x}$
+
 # $B(n,p)$ と $N(\mu,\sigma)$　
 ()内の記号の意味が異なる。
 
