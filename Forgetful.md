@@ -12,7 +12,7 @@ $\displaystyle \frac{df}{dx}=\frac{df}{du}\frac{du}{dx}$
 
 <ins>３段以上の場合も同様</ins>
 
-$f=f(u),u=u(v),v=v(u)\to f(u(v(x)))$
+$f=f(u),u=u(v),v=v(x)\to f(u(v(x)))$
 
 $f$ は $u$ から定まり、 $u$ は $v$ から定まり、 $v$ は $x$ から定まる。。この時、
 
