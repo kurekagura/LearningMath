@@ -53,9 +53,11 @@ $\delta^L_j=y_j-\hat{y}_j$
 
 $\displaystyle\frac{\partial E}{\partial w^L_{ij}} =(y_j-\hat{y}_j)\times z^{L-1}_i$
 
-～　重みの更新（合ってる？）　～
+～　重みの更新　～
 
-$ w_{new} = w_{old} - lr\times{(y_j-\hat{y}_j)z^{L-1}_i}$
+学習率 $\varepsilon$ を掛けて引く。
+
+$ w^L_{ij} \gets w^L_{ij} - \varepsilon\times{(y_j-\hat{y}_j)z^{L-1}_i}$
 
 ～　中間層を考える　～
 
