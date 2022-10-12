@@ -6,7 +6,7 @@
 
 $f=f(u),u=u(x)\to f(u(x))$
 
-$f$ は $u$ から定まり、$u$ は $x$ から定まる。この時、
+$f$ は $u$ から定まり、 $u$ は $x$ から定まる。この時、
 
 $\displaystyle \frac{df}{dx}=\frac{df}{du}\frac{du}{dx}$
 
@@ -14,7 +14,7 @@ $\displaystyle \frac{df}{dx}=\frac{df}{du}\frac{du}{dx}$
 
 $f=f(u),u=u(v),v=v(u)\to f(u(v(x)))$
 
-$f$ は $u$ から定まり、$u$ は $v$ から定まり、 $v$ は $x$ から定まる。。この時、
+$f$ は $u$ から定まり、 $u$ は $v$ から定まり、 $v$ は $x$ から定まる。。この時、
 
 $\displaystyle \frac{df}{dx}=\frac{df}{du}\frac{du}{dx}$
 $\displaystyle=\frac{df}{dv}\frac{dv}{dx}$
