@@ -1,3 +1,18 @@
+# 表記
+
+$\boxed{u_i^{l-1}|z_i^{l-1}}\xrightarrow{w^l_{ij}}\boxed{u_j^l\quad|z_j^l\quad}$  
+
+$i$ は $l-1$ 層目の上から $i$ 番目のニューロン。  
+$j$ は $l$ 層目の上から $j$ 番目のニューロン。
+
+$u$ は重み付き線形和
+
+$\displaystyle u^l_{j}=\sum_i w^l_{ij}z^{l-1}_i$
+
+$u$ を活性化関数で処理した結果が $z$
+
+$\displaystyle z^l_j=\varphi(u^l_j)=\varphi(\sum_i w^l_{ij}z^{l-1}_i)$
+
 # 誤差逆伝播
 
 $u$ は重み付け線形和の関数を表す。
