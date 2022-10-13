@@ -109,13 +109,27 @@ $y'=\frac{1}{2}x^{-1/2}=\frac{1}{2\sqrt{x}}$
 
 # 指数関数 $a^x$ の微分
 
-$y=a^x\quad(a>0,\space a\ne1)$
+$a>0,\space a\ne1$
 
 $(a^x)'=a^x\log_{e}a$
+
+$a=e$ の場合：
 
 $(e^x)'=e^x$
 
 $(e^{nx})'=(e^{nx})\times{n}=ne^{nx}$　・・・合成関数の微分
+
+# 対数 $\log_a{x}$ 関数の微分
+
+$\displaystyle (\log_a{x})'=\frac{1}{x\log{a}}$
+
+$a=e$ の場合：
+
+$\displaystyle (\log{x})'=\frac{1}{x}$
+
+# 指数関数と対数関数のグラフ
+
+$y=x$ に対して対称となる。
 
 # 偏差値
 **※「標準偏差値」という用語は無い。**
