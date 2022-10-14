@@ -1,5 +1,6 @@
 $\^{a}$<br>
 $\={a}$<br>
+$\hat{a}$<br>
 $\overline{a}$<br>
 
 $太字$  
