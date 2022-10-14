@@ -1,14 +1,17 @@
-$\^{a}$<br>
-$\={a}$<br>
-$\hat{a}$<br>
-$\overline{a}$<br>
-
-$太字$  
-$\bold{太字}$  
-$\boldsymbol{太字}$
-
-$a\plusmn b$  
-$a\pm b$
-
-<u>アンダーライン</u>  
-<ins>アンダーライン</ins>
+# {}
+- $\{{a}\}$
+- $\set{a}$
+# ^
+- $\^{a}$
+- $\={a}$
+- $\hat{a}$
+- $\overline{a}$
+# 太字
+- $\bold{太字}$
+- $\boldsymbol{太字}$
+## ±
+- $a\plusmn b$
+- $a\pm b$
+## アンダーライン
+- <u>アンダーライン</u>
+- <ins>アンダーライン</ins>
