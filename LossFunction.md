@@ -16,6 +16,8 @@ $\qquad\overline{y}$ : 平均値
 
 $\displaystyle L=-\frac{1}{N}\sum^N_{n=1}\sum^K_{k=1}t_n^k\log{y_{nk}}$
 
+<img src="./img/交差エントロピー誤差(多クラス分類).png" width="50%">
+
 ## ２クラス分類
 
 $\displaystyle L=-\sum^N_{n=1}\lbrace t_n\log{y_n}+(1-t_n)\log(1-y_n)\rbrace$
