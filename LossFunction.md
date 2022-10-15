@@ -20,7 +20,9 @@ $\displaystyle L=-\frac{1}{N}\sum^N_{n=1}\sum^K_{k=1}t_n^k\log{y_{nk}}$
 
 $\displaystyle L=-\sum^N_{n=1}\lbrace t_n\log{y_n}+(1-t_n)\log(1-y_n)\rbrace$
 
-正解と不正解の場合で、右と左の部分を別々のグラフで表すと理解しやすい。
+正解（ $t_n=1$ ）と不正解（ $t_n=0$ ）の場合で、左右の項を別々のグラフで表すと理解しやすい。
+
+<img src="./img/交差エントロピー誤差(2クラス分類).png" width="50%">
 
 尤度（関数）：
 
