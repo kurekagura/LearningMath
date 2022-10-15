@@ -22,6 +22,8 @@ $\displaystyle L=-\frac{1}{N}\sum^N_{n=1}\sum^K_{k=1}t_n^k\log{y_{nk}}$
 
 $\displaystyle L=-\sum^N_{n=1}\lbrace t_n\log{y_n}+(1-t_n)\log(1-y_n)\rbrace$
 
+正解値（ $t_n=1\space or\space t_n=0$ ）と予測値が一致すると $\lbrace \rbrace$ の中は ゼロ になる。
+
 正解（ $t_n=1$ ）と不正解（ $t_n=0$ ）の場合で、左右の項を別々のグラフで表すと理解しやすい。
 
 <img src="./img/交差エントロピー誤差(2クラス分類).png" width="50%">
@@ -37,5 +39,3 @@ $\displaystyle L=-\sum^N_{n=1}\lbrace t_n\log{y_n}+(1-t_n)\log(1-y_n)\rbrace$
 対数とする理由：
 
 小数点の掛け算を繰り返すと値がどんどん小さくなっていく。そこで、対数を導入し掛け算を足し算とする方が都合が良い。
-
-予測値と正解値が一定すると $\lbrace \rbrace$ の中は ゼロ になる。
