@@ -10,12 +10,11 @@
 
 誤差：
 
-$\displaystyle E_m=\frac{\sum_i^N w_i^m I(y_m(x_i)\ne{t_i})}{\sum_i^N w_i^m}$
-
+$E_m=\frac{\displaystyle\sum_i^N w_i^m I(y_m(x_i)\ne{t_i})}{\displaystyle\sum_i^N w_i^m}$
 
 $I$ : 予測が正解の場合 0、不正解の場合 1 を戻す（0か1を返す関数）。
 
-データ $i$ が不正解の場合、 $I\to 1$ が加重加算されるので、$E$ は大きくなる。
+データ $i$ が不正解の場合、 $I\to 1$ が加重加算されるので、 $E$ は大きくなる。
 
 ※ $E$ が減少するように 分岐 $y_m$ を決めていく。
 
