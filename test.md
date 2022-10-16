@@ -1,3 +1,7 @@
+# Infinity $\infty$
+- $\infty$
+- $\infin$
+
 # {}
 - $\set{a}$
 - $\{a\}$
