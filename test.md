@@ -1,3 +1,9 @@
+# $\sum$
+
+$\displaystyle\sum^n_{k=1}x_k$
+
+$\sum^n_{k=1}x_k$
+
 # Infinity $\infty$
 - $\infty$
 - $\infin$
