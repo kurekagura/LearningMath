@@ -1,3 +1,11 @@
+# Softmax
+
+$\displaystyle y_i=\frac{e^{x_i}}{\displaystyle \sum^n_{k=1}e^{x_k}}$
+
+$(i=1,2,...,n)$
+
+<img src="./img/Softmax0~10.png" width="50%">
+
 # ReLU
 
 derivative
