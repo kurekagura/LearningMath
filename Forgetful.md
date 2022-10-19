@@ -8,7 +8,7 @@
 
 ${}_nP_k=n(n-1)(n-2)...(n-k+1)$
 
-$\underline{\text{※ n から k 回、 前の数-1 した数を掛ける}}$
+<ins>※ n から k 回、 前の値-1 した値を掛ける。</ins>
 
 ## ${}_nC_k$ （Combination：組み合わせ）
 
@@ -16,7 +16,7 @@ $\underline{\text{※ n から k 回、 前の数-1 した数を掛ける}}$
 
 $\displaystyle {}_nC_k=\frac{{}_nP_k}{k!}$
 
-$\underline{\text{※ n から k 回、 前の数-1 した数を掛ける。k!で割る（分母）。}}$
+<ins>※ n から k 回、 前の値-1 した値を掛ける。それをk!で割る（分母）。</ins>
 
 # 対数を利用する理由
 
