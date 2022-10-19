@@ -1,3 +1,8 @@
+# Combination
+
+- $C={}_nC_k$ (OK)
+- $C=_nC_k$ (NG)
+
 # $\sum$
 
 $\displaystyle\sum^n_{k=1}x_k$
