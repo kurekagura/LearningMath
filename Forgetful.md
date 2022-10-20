@@ -1,5 +1,32 @@
 ※上へ追記していく
 
+# ベクトルの内積（Inner product of vectors）
+**～　n次元数ベクトルの内積（成分）　～**
+
+$\vec{u}=(u_1,u_2,...,u_n)$ , $\vec{v}=(v_1,v_2,...,v_n)$
+
+$\displaystyle \vec{u}\cdot\vec{v}=\sum^n_{i=1}u_iv_i$
+
+～　２次元ベクトルの内積 ～
+
+$\vec{a}\cdot\vec{b}=\|a\|\|b\|\cos\theta$
+
+～　２次元ベクトルの内積（成分）～
+
+$\vec{a}=(a_1,a_2)$ , $\vec{b}=(b_1,b_2)$
+
+$\vec{a}\cdot\vec{b}=a_1\times{b_1}+a_2\times{b_2}$
+
+---  
+【証明】  
+余弦定理 ： $C^2=A^2+B^2-2AB\cos\theta$  
+$(a_1-b_1)^2+(a_2-b_2)^2=(a^2_1+a^2_2)+(b^2_1+b^2_2)-2AB\cos\theta$  
+$a^2_1-2a_1b_1+b^2_1+a^2_2-2a_2b_2+b^2_2=(a^2_1+a^2_2)+(b^2_1+b^2_2)-2AB\cos\theta$  
+$-2a_1b_1-2a_2b_2=-2AB\cos\theta$  
+$a_1\times{b_1}+a_2\times{b_2}=\|a\|\|b\|\cos\theta$
+
+---
+
 # 正弦と余弦
 
 <img src="./img/正弦余弦.png" width="50%">
