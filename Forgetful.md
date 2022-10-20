@@ -166,8 +166,15 @@ $\displaystyle \frac{\partial f}{\partial x}=\frac{ \partial f}{\partial u}\frac
 
 $\displaystyle \frac{\partial f}{\partial x}=\sum_k\frac{ \partial f}{\partial u_k}\frac{\partial u_k}{\partial x}$
 
-# $B(n,p)$ と $N(\mu,\sigma)$　
-()内の記号の意味が異なる。
+# $B(n,p)$ と $N(\mu,\sigma)$
+
+※ （）内の記号の意味が異なる。
+
+$B(n,p)$ :  二項分布
+
+成功確率 $p$ (失敗確率 $q=(1-p)$ )のベルヌーイ試行を $n$ 回試行したとき、 成功回数が従う分布。
+
+
 
 # 多変量正規分布
 1次元の正規分布を高次元へと一般化した確率分布。多次元正規分布ともいう。VAE(Variational AutoEncoder)で利用。
