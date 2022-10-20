@@ -1,5 +1,17 @@
 ※上へ追記していく
 
+# 正弦と余弦
+
+<img src="./img/正弦余弦.png" width="50%">
+
+## 余弦定理（Law of cosines）
+
+<img src="./img/余弦定理.png" width="50%">
+
+$a^2=b^2+c^2-2bc\cos\alpha$
+
+※ 左辺（ $a^2$ ）は、正角 $\alpha$ の正弦 $a$ の二乗であるが、コサインが登場するので余弦定理。
+
 # 順列と組み合わせ
 
 ## ${}_nP_k$ （Permutation：順列）
