@@ -30,6 +30,15 @@ k 回発生する確率分布 :
 
 $\displaystyle P(X=k)=e^{-\lambda}\frac{\lambda^k}{k!}$
 
+---
+【覚え方】
+
+確率の総和は1なので、 $\displaystyle e^{-\lambda}\sum^{\infty}_{k=0}\frac{\lambda^k}{k!}=1$
+
+$e^{\lambda}$ をマクローリン展開すると、 $e^{\lambda}=\displaystyle\sum^{\infty}_{k=0}\frac{\lambda^k}{k!}$ 
+
+---
+
 期待値：
 
 $E[X]=np=\lambda$
@@ -40,11 +49,9 @@ $V[X]=np(1-p)=\lambda$
 
 ～　導出　～
 
-二項分布から導く。
+二項分布から導く？
 
 $\displaystyle P(X=k)={}_nC_kp^k q^{n-k}=\frac{n!}{k!(n-k)!}\Big(\frac{\lambda}{n}\Big)^k\Big(1-\frac{\lambda}n\Big)^{n-k}$
-
-$e^x$ のマクローリン展開の理解が必要。
 
 ～　解説　～
 
