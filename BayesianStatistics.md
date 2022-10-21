@@ -4,7 +4,7 @@ $\displaystyle P(A|B)=\frac{P(B|A)P(A)}{P(B)}$
 
 ～　解説　～
 
-<img src="./img/ベン図P(AWhenB).png" width="50%">
+<img src="./img/ベン図P(AwhenB).png" width="50%">
 
 条件付き確率の次式は<ins>ベン図で理解すると良い。</ins>
 
