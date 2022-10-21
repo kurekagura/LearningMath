@@ -1,5 +1,11 @@
 ※上へ追記していく
 
+# $e^x$ のマクローリン展開
+
+$e^x=\displaystyle\frac{x^0}{0!}+\frac{x^1}{1!}+\frac{x^2}{2!}+\frac{x^3}{3!}+...$
+
+$=\displaystyle\sum^{\infty}_{k=0}\frac{x^k}{k!}$
+
 # 0!（0の階乗）の定義
 
 $0!=1$
