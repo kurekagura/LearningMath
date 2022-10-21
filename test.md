@@ -1,3 +1,6 @@
+# Big ()
+- $\displaystyle\Big(\frac{\lambda}{n}\Big)$
+
 # Combination
 
 - $C={}_nC_k$ (OK)
