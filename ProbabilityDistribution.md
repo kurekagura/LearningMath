@@ -1,3 +1,40 @@
+# ベータ分布
+確率そのものを確率変数としたい場合に利用される。
+
+確率密度関数：
+
+$P(X=p)=Beta(\alpha,\beta)$
+
+$\displaystyle=\frac{p^{\alpha-1}(1-p)^{\beta-1}}{B(\alpha,\beta)}=C\{p^{\alpha-1}(1-p)^{\beta-1}\}$
+
+$\displaystyle B(\alpha,\beta)=\int^1_0 t^{\alpha-1}(1-t)^{\beta-1}dt$ （← ベータ関数という）
+
+実現値 : $p\in[0,1]$
+
+パラメータ : $\alpha,\space\beta$ 正の実数
+
+※ $Beta(\alpha,\beta)$ を積分すると 1 になるように（**正規化条件**）、分母がベータ関数（定数C）となっている。
+
+期待値：
+
+$\displaystyle E[X]=\frac{\alpha}{\alpha+\beta}$
+
+分散：
+
+$\displaystyle V[X]=\frac{\alpha\beta}{(\alpha+\beta)^2(\alpha+\beta+1)}$
+
+最頻値：
+
+$x=\displaystyle\frac{\alpha-1}{\alpha+\beta-2}$
+
+～　グラフ　～
+
+- $\alpha,\beta$ の大小関係によって最頻値を左右に振ることができる。
+- $\alpha=\beta\lt 0$ で凹型にできる。
+- $\alpha=\beta=1$ で一様分布にできる。
+
+<img src="./img/ベータ分布(αβ変化).png">
+
 # 二項分布（binomial distribution）
 
 成功確率 $p$ (失敗確率 $q=(1-p)$ )のベルヌーイ試行を $n$ 回試行したとき、 確率変数（成功回数）が従う分布を二項分布という。 $X\backsim B(n,p)$ で表す。横軸は $1\backsim n$ ではなく、**成功回数** である点に注意。縦軸は確率。
@@ -21,6 +58,8 @@ $V[X]=npq$
 $P(k)={}_{100}C_k(1/6)^k(5/6)^{100-k}\quad※0\leqq k\leqq 100$
 
 <img src="./img/二項分布の例1.png" width="50%">
+
+※ 二項分布は離散型の確率分布である（上記グラフでは連続型のようにみえるが）。
 
 # ポアソン分布（Poisson distribution）
 
@@ -85,3 +124,4 @@ $P(X>2)=1-\{P(X=0)+P(X=1)+P(X=2)\}$
 $=1-e^{-0.8}(1+0.8+0.32)=1-1.44e^{-0.8}\Doteq{0.046}$
 
 <img src="./img/ポアソン分布の例1.png">
+
