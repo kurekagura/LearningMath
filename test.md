@@ -1,3 +1,7 @@
+# argmax
+- $argmax\ a$
+- $\argmax a$
+
 # Big ()
 - $\displaystyle\Big(\frac{\lambda}{n}\Big)$
 
