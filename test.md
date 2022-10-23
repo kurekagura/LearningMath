@@ -1,5 +1,5 @@
 # argmax
-- $argmax\ a$
+- $\arg\max a$
 - $\argmax a$
 
 # Big ()
