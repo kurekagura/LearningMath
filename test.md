@@ -21,9 +21,9 @@ $\sum^n_{k=1}x_k$
 - $\infin$
 
 # {}
-- $\set{a}$
-- $\{a\}$
-- $\lbrace a \rbrace$
+- $\set{a}$ (OK)
+- $\lbrace a \rbrace$ (OK)
+- $\{a\}$ (NG)
 
 # ^
 - $\^{a}$
