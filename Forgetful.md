@@ -4,9 +4,9 @@
 
 ## ∈（属する）
 
-$x\in\set{0,1}$ : $\set{}$ の中の値のどれか一つ。
+$x\in\lbrace 0,1\rbrace$ : $\lbrace\rbrace$ の中の値のどれか一つ。
 
-※ $\set{}$ は集合を表す。
+※ $\lbrace\rbrace$ は集合を表す。
 
 $x\in[0,1]$ : この区間・範囲の値のどれか一つ。
 
