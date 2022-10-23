@@ -3,7 +3,7 @@
 
 確率密度関数：
 
-$P(X=p)=Beta(\alpha,\beta)$
+$Pr(X=p)=Beta(\alpha,\beta)$
 
 $\displaystyle=\frac{p^{\alpha-1}(1-p)^{\beta-1}}{B(\alpha,\beta)}=C\{p^{\alpha-1}(1-p)^{\beta-1}\}$
 
@@ -25,7 +25,7 @@ $\displaystyle V[X]=\frac{\alpha\beta}{(\alpha+\beta)^2(\alpha+\beta+1)}$
 
 最頻値：
 
-$x=\displaystyle\frac{\alpha-1}{\alpha+\beta-2}$
+$\hat{p}=\displaystyle\frac{\alpha-1}{\alpha+\beta-2}$
 
 ～　グラフ　～
 
@@ -34,6 +34,26 @@ $x=\displaystyle\frac{\alpha-1}{\alpha+\beta-2}$
 - $\alpha=\beta=1$ で一様分布にできる。
 
 <img src="./img/ベータ分布(αβ変化).png">
+
+～　具体例　～
+装置Aと装置Bから生産される部品の不良品数は各々次の通りであった。不良品の割合の期待値と最頻値を比較する。
+
+【データ】  
+装置A : 全体1000個。不良品50個  
+装置B : 全体24個。不良品2個
+
+期待値（平均） :  
+装置A : 50/1000=5%◎  
+装置B : 2/24=8%
+
+最頻値 :  
+装置A : (50-1)/(1000-2)=4.9%  
+装置B : (2-1)/(24-2)=4.5%◎
+
+期待値（平均値）からは装置Aの方が優秀と出る。一方、最頻値では装置Bの方が優秀と出る。
+最頻値は、各装置の不良品の率として尤もらしい確率を示している。
+
+<img src="./img/ベータ分布(逆転の例).png" width="50%" >
 
 # 二項分布（binomial distribution）
 
