@@ -1,9 +1,13 @@
 ※上へ追記していく
+# ベータ関数
+
+～　定義　～
+
+$\displaystyle Beta(p,q)=\int^1_0x^{p-1}(1-x)^{q-1}dx$
 
 # 共分散（Covariance ）
 
 大きさが同じ二つのデータ間での、平均からの偏差の積の平均値である。$(x_i,y_i)$ の散布データが $n$ 組ある。
-
 
 $\displaystyle\sigma_{xy}=\frac{1}{n}\sum^n_{k=1}(x_k-\overline{x})(y_k-\overline{y})$
 
