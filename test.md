@@ -25,11 +25,11 @@ $\sum^n_{k=1}x_k$
 - $\lbrace a \rbrace$ (OK)
 - $\{a\}$ (NG)
 
-# ^
-- $\^{a}$
-- $\={a}$
-- $\hat{a}$
-- $\overline{a}$
+# ^ and overline
+1. $\^{a}$
+2. $\={a}$
+3. $\hat{a}$ (OK)
+5. $\overline{a}$ (OK)
 
 # 太字
 - $\bold{太字}$
