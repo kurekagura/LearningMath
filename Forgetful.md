@@ -1,9 +1,14 @@
 ※上へ追記していく
+
 # ベータ関数
 
 ～　定義　～
 
 $\displaystyle Beta(p,q)=\int^1_0x^{p-1}(1-x)^{q-1}dx$
+
+## ベータ分布との関係
+
+<img src="./img/β関数とβ分布.png" width="50%">
 
 # 共分散（Covariance ）
 

@@ -30,17 +30,23 @@ $=\displaystyle\frac{n!}{x_1!(n-x_1)!}p^{x_1}_1(1-p_1)^{n-x_1}={}_nC_{x_1} p^{x_
 
 確率密度関数：
 
-$Pr(X=p)=Beta(\alpha,\beta)$
+$f(p|\alpha,\beta)=$
 
-$\displaystyle=\frac{p^{\alpha-1}(1-p)^{\beta-1}}{B(\alpha,\beta)}=C\{p^{\alpha-1}(1-p)^{\beta-1}\}$
+$\displaystyle=\frac{p^{\alpha-1}(1-p)^{\beta-1}}{B(\alpha,\beta)}=C\times \lbrace p^{\alpha-1}(1-p)^{\beta-1}\rbrace$
 
-$\displaystyle B(\alpha,\beta)=\int^1_0 t^{\alpha-1}(1-t)^{\beta-1}dt$ （← ベータ関数という）
+$\displaystyle B(\alpha,\beta)=\int^1_0 p^{\alpha-1}(1-p)^{\beta-1}dp$ （← ベータ関数という）
 
 実現値 : $p\in[0,1]$
 
 パラメータ : $\alpha,\space\beta$ 正の実数
 
-※ $Beta(\alpha,\beta)$ を積分すると 1 になるように（**正規化条件**）、分母がベータ関数（定数C）となっている。
+※ 確率密度関数 $f(p|\alpha,\beta)$ を積分すると 1 になるように（**正規化条件**）、分母がベータ関数（定数 $\displaystyle\frac{1}{C}$）となっている。
+
+分子の各点 $(p_i,y_i)$ の縦軸成分値 $y_i$ を 面積（ $B(\alpha,\beta)$ の結果）で割ることによって、積分結果が1となるようにグラフが縦軸に伸縮・伸張される。 
+
+～ $\alpha=2,\beta=5$ の例 ～
+
+<img src="./img/β関数とβ分布.png" width="100%">
 
 期待値：
 
@@ -82,11 +88,11 @@ $\hat{p}=\displaystyle\frac{\alpha-1}{\alpha+\beta-2}$
 
 <img src="./img/ベータ分布(逆転の例).png" width="50%" >
 
-# 二項分布（binomial distribution）
+# 二項分布（<ins>bin</ins>omial distribution）
 
-成功確率 $p$ (失敗確率 $q=(1-p)$ )のベルヌーイ試行を $n$ 回試行したとき、 確率変数（成功回数）が従う分布を二項分布という。 $X\backsim B(n,p)$ で表す。横軸は $1\backsim n$ ではなく、**成功回数** である点に注意。縦軸は確率。
+成功確率 $p$ (失敗確率 $q=(1-p)$ )のベルヌーイ試行を $n$ 回試行したとき、 確率変数（成功回数）が従う分布を二項分布という。 $X\backsim B(n,p)$ や $Bin(n,p)$ で表す。横軸は $1\backsim n$ ではなく、**成功回数** である点に注意。縦軸は確率。
 
-k 回成功する確率分布 : $X\backsim B(n,p)$
+k 回成功する確率分布 : $X\backsim Bin(n,p)$
 
 $P(X=k)={}_nC_kp^k q^{n-k}$
 
@@ -172,3 +178,12 @@ $=1-e^{-0.8}(1+0.8+0.32)=1-1.44e^{-0.8}\Doteq{0.046}$
 
 <img src="./img/ポアソン分布の例1.png">
 
+# 指数型分布族（exponential family）
+
+正規分布
+
+ベルヌーイ分布（共役事前分布：ベータ分布）
+
+カテゴリカル分布（共役事前分布：ディリクレ分布）
+
+ポアソン分布
