@@ -46,7 +46,7 @@ $\displaystyle B(\alpha,\beta)=\int^1_0 p^{\alpha-1}(1-p)^{\beta-1}dp$ （← �
 
 ～ $\alpha=2,\beta=5$ の例 ～
 
-<img src="./img/β関数とβ分布.png" width="100%">
+<img src="./img/β関数とβ分布.png" width="50%">
 
 期待値：
 
