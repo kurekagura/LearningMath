@@ -47,3 +47,7 @@ $\displaystyle=\frac{1}{\displaystyle\frac{1}{Precision}+\frac{1}{Recall}}\times
 通常の平均の算出式と比べると逆のイメージで捉えるとよい（２で割るのではなく2を掛ける、逆数の足し算が分子ではなく分母に来ている、など）。<ins>F-Score は分子、この場合 TP に着目した指標と理解しておく。</ins>
 
 例）時速は、距離/時間（km/h）の比率の指標である。この場合、調和和平均は距離を基準とした比率の平均となる。
+
+# IoU (Intersection over Union)
+
+<img src="./img/IoU.png" width="50%">
