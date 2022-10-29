@@ -51,3 +51,94 @@ $\displaystyle=\frac{1}{\displaystyle\frac{1}{Precision}+\frac{1}{Recall}}\times
 # IoU (Intersection over Union)
 
 <img src="./img/IoU.png" width="50%">
+
+# 物体検出の場合
+
+複数ラベルの検出でも、1種類のラベル毎に考える。  
+例）正解ラベル：Dog（正解BBox数5）
+
+|Rank|Confidence|IoU≧Thres?|Precision|Recall|
+|:---:| ---: | ---: | ---: | ---: |
+| 1 | 95| TP |1/1|1/5|
+| 2 | 90| TP |2/2|2/5|
+| 3 | 85| FP |2/3|2/5|
+| 4 | 80| TP |3/4|3/5|
+| 5 | 75| FP |3/5|3/5|
+| 6 | 70| TP |4/6|4/5|
+| 7 | 65| TP |5/7|5/5|
+| 8 | 60| FP |5/8|5/5|
+| 9 | 55| FP |5/9|5/5|
+|10 | 50| FP |5/10|5/5|
+
+
+検出BBoxリストを信頼度でソートする。
+
+`IoU ≧ Threshold` のみをTrue、それ以外をFalseとする。
+
+⇒ TP, FP
+
+※ 混同行列の TN は定義しない（できない）
+
+<table>
+<tr>
+<td rowspan="2" colspan="2">物体検出の場合</td>
+<td colspan="2">予測BBox</td>
+</tr>
+<tr>
+<td>Posi</td>
+<td>Nega</td>
+</tr>
+<tr>
+<td rowspan="2">正解BBox</td>
+<td>Pos</td>
+<td bgcolor="blue" style="color:white">TP</td>
+<td>FN</td>
+</tr>
+<tr>
+<td>Nega</td>
+<td>FP</td>
+<td>TN(未定義)</td>
+</tr>
+</table>
+
+検出BBoxリストの行ごとのPrecisionとRecallを算出する。
+
+$Precision=\displaystyle\frac{現在Rank以上にあるTPの数}{現在Rank以上にあるBBox数}$
+
+※ 分母は+1づづ加算される。
+
+$Recall=\displaystyle\frac{現在Rank以上にあるTPの数}{正解BBoxの数}$
+
+※ 分母は一定。
+
+`Recallが1以上になる場合`
+
+## AP( Average Precision ), mAP( Mean AP )
+
+PR曲線（Precision-Recall Curve）
+
+<img src="./img/PRCurve.png" width="50%">
+
+APは理論的にはPR曲線の積分値である。
+
+$AP=\displaystyle\int^1_0p(r)dr$
+
+しかし、実際は、ジグザクを長方形型へと補完した補正値を用いて算出する。
+
+$\displaystyle P_{interpolated}(r)=\max_{\tilde{r}\ge r}{p(\tilde{r})}$
+
+Pythonで実装する場合
+```python
+#リストを逆順にして、
+reversed_precision = precision0_1[::-1]
+#補正値を算出して、
+accumulated_precision = np.maximum.accumulate(reversed_precision)
+#順序を戻す
+interpolated_precision = accumulated_precision[::-1]
+```
+
+$AP=\displaystyle\sum^N_{i=2}(r_i-r_{i-1})P(r_i)$
+
+クラス数がCのときのmAP。
+
+$mAP=\displaystyle\frac{1}{C}\sum^C_{i=1}AP_i$
