@@ -129,6 +129,16 @@ $\displaystyle P_{interpolated}(r)=\max_{\tilde{r}\ge r}{p(\tilde{r})}$
 
 Pythonで実装する場合
 ```python
+tp = [True if i>thres else False for i in iou]
+fp = [not i for i in tp]
+tp_cumsum = np.cumsum(tp) #TP累積和
+fp_cumsum = np.cumsum([not i for i in tp]) #FP累積和
+precision = tp_cumsum/(tp_cumsum + fp_cumsum)
+recall = tp_cumsum/sum(x==True for x in tp)
+
+recall0_1 = np.concatenate([[0], recall, [1]])
+precision0_1 = np.concatenate([[0], precision, [0]])
+
 #リストを逆順にして、
 reversed_precision = precision0_1[::-1]
 #補正値を算出して、
