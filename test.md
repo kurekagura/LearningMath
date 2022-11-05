@@ -1,3 +1,13 @@
+# Matrix
+
+$$
+A=
+\begin{pmatrix}
+   a & b \\
+   c & d
+\end{pmatrix}
+$$
+
 # argmax
 - $\arg\max a$
 - $\argmax a$
