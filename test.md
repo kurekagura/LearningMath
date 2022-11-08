@@ -1,12 +1,19 @@
 # Matrix
+(OK)
 
-$$
-A=
+$$A=
 \begin{pmatrix}
    a & b \\
    c & d
-\end{pmatrix}
-$$
+\end{pmatrix}$$
+
+(NG)
+
+$A=
+\begin{pmatrix}
+   a & b \\
+   c & d
+\end{pmatrix}$
 
 # argmax
 - $\arg\max a$
