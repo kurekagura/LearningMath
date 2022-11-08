@@ -1,3 +1,9 @@
+# $a\in\mathbb{R}$
+- $a\in\mathbb{R}$
+- $a\in\reals$
+- $a\in\Reals$
+- $a\in\R$
+
 # Matrix
 (OK)
 
